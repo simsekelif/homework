@@ -3,13 +3,13 @@
 for(let i = 42; i<= 173; i++) {
     
     // x'in 13 ile bölümünden kalan 0 olmalı. 
-    let kalan = i % 13;
+    let leftFrom13 = i % 13;
     
     // eğer öyleyse 
-    if(kalan === 0) {
+    if(leftFrom13 === 0) {
         // bu sayının 6 ile bölümünden kalanı 0 farklı olmalı.
-        kalan = i % 6; 
-        if(kalan !== 0) {
+        let leftFrom6 = i % 6; 
+        if(leftFrom6 !== 0) {
             console.log(i);
         } else {
             //bu sayıyı atla
