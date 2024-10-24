@@ -6,8 +6,11 @@
 // 4!! = 4 * 2 = 8
 // 3!! = 3 * 1 = 3
 
-let x = 11
+let x = 11;
+let result = x;
+
 for ( let i = x - 2; i >= 1; i -= 2) {
-    console.log(i);
+    result = result * i;
 }
+console.log(result);
 
